@@ -9,8 +9,6 @@ router.get('/price', getPricesValidator, async (req: Request, res: Response, nex
   try {
     const { query } = req;
 
-    //const { exchange, symbols, dates } = query;
-
     const dates = (Array.isArray(query.dates) ? query.dates : [query.dates]) as string[];
     const exchange = query.exchange as Exchange;
     const symbols = (Array.isArray(query.symbols) ? query.symbols : [query.symbols]) as string[];

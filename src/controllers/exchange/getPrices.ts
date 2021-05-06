@@ -10,11 +10,6 @@ const exchanges = {
 
 const timeframe = '1d';
 
-// const symbols = ['BTC/USDT', 'ETH/USDT', 'XRP/USDT'];
-// const dates = ['2021-05-01', '2021-05-02', '2021-05-03'];
-
-//const datesInMs = dates.map((date) => new Date(date).getTime());
-
 type getPricesParams = {
   exchange: Exchange;
   symbols: string[];
